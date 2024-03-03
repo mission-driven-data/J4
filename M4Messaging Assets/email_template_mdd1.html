@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Default sans-serif font */
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: 'Architects Daughter', cursive; /* Specific font for H1 */
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+        }
+        .button-orange, .button-blue {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .button-orange {
+            background-color: #f0882b; /* Orange shade */
+        }
+        .button-blue {
+            background-color: #399ad5; /* Blue shade */
+        }
+        .table-orange, .table-blue, .table-column-orange, .table-column-blue {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-orange td, .table-orange th, .table-blue td, .table-blue th,
+        .table-column-orange td, .table-column-orange th, .table-column-blue td, .table-column-blue th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .table-orange th, .table-column-orange th {
+            background-color: #f0882b; /* Orange shade */
+            color: white;
+        }
+        .table-blue th, .table-column-blue th {
+            background-color: #399ad5; /* Blue shade */
+            color: white;
+        }
+
+
+
+        .table-column-orange tr, .table-column-blue tr {
+            border-collapse: collapse;
+        }
+        .table-column-orange th, .table-column-blue th {
+            color: #ffffff;
+        }
+        .table-column-orange tr td:first-child, .table-column-blue tr td:first-child {
+            font-weight: bold; /* Makes text bold to mimic header style */
+        }
+        .table-column-orange tr td:first-child {
+            background-color: #f0882b; /* Corrected orange background for the first column */
+            color: white;
+        }
+        .table-column-blue tr td:first-child {
+            background-color: #399ad5; /* Corrected blue background for the first column */
+            color: white;
+        }
+        .footer {
+            background-color: #11274a; /* Navy blue */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        .footer a, .footer a:visited, .footer a:hover, .footer a:active {
+            color: white;
+            
+        }
+        /*
+        .container a, .container a:visited, .container a:hover, .container a:active {
+            color: #399ad5;
+            text-decoration: none;
+        }*/
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>@message_header@</h1>
+        <p>@message@</p>
+     
+        <!-- Blue Table with Header Column -->
+        <table class="table-column-blue">
+            <!--<tr>
+                <th>Client Name</th>
+                <td>Taylor Swift</td>
+            </tr>
+            <tr>
+                <th>Appointment Date</th>
+                <td>January 13, 2024</td>
+            </tr>
+            <tr>
+                <th>Appointment Clinician</th>
+                <td>Conan O'Brien</td>
+            </tr>
+            <tr>
+                <th>Appointment Location</th>
+                <td>Cornelia Street Office</td>-->
+            @content_tabel@
+            </tr>
+        </table>
+        
+        <p style="text-align: center;">
+            <a href="@call_to_action_1_link@" class="button-orange">@call_to_action_1_label@</a>
+            <!--<a href="@view_alert_details_link@" class="button-blue">@view_alert_details_label</a>-->
+        </p>
+    </div>
+    <div class="footer">
+        © 2024 <a href = 'https://www.missiondrivendata.com'>Mission Driven Data</a>. All rights reserved.
+    </div>
+</body>
+</html>
