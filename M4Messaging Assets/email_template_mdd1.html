@@ -52,9 +52,6 @@
             background-color: #399ad5; /* Blue shade */
             color: white;
         }
-
-
-
         .table-column-orange tr, .table-column-blue tr {
             border-collapse: collapse;
         }
@@ -99,8 +96,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>@message_header@</h1>
-        <p>@message@</p>
+        <h1>@m_eml_tmplt_header@</h1>
+        <p>@m_eml_message@</p>
      
         <!-- Blue Table with Header Column -->
         <table class="table-column-blue">
@@ -118,13 +115,13 @@
             </tr>
             <tr>
                 <th>Appointment Location</th>
-                <td>Cornelia Street Office</td>-->
-            @content_tabel@
-            </tr>
+                <td>Cornelia Street Office</td>
+            </tr>-->
+            @m_eml_tmplt_table_calculated@
         </table>
-        
+        <p>@m_eml_tmplt_footer@</p>
         <p style="text-align: center;">
-            <a href="@call_to_action_1_link@" class="button-orange">@call_to_action_1_label@</a>
+            <a href="@m_eml_tmplt_cta_lnk@" class="button-orange">@m_eml_tmplt_cta_lbl@</a>
             <!--<a href="@view_alert_details_link@" class="button-blue">@view_alert_details_label</a>-->
         </p>
     </div>
