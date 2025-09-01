@@ -1,0 +1,13 @@
+<svg width="25" height="25" viewBox="3.9 3.9 16.2 16.2" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" fill="none" stroke="currentColor" style="display:block">
+  <title id="title">Inactive account</title>
+  <desc id="desc">User silhouette with a diagonal slash indicating the account is inactive.</desc>
+
+  <!-- Faded user silhouette -->
+  <g opacity=".35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="8" r="3"></circle>
+    <path d="M6 19a6 6 0 0 1 12 0"></path>
+  </g>
+
+  <!-- Strong “inactive/disabled” slash -->
+  <path d="M19 5L5 19" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
