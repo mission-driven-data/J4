@@ -14,4 +14,6 @@
     <path d="M15.2 13.8h3.2c-.4 .5-.4 1 0 1.5h-3.2z"/>
 </g>
 
+  <!-- Strong “inactive/disabled” slash -->
+  <path d="M19 5L5 19" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke="#DC2626"></path>
 </svg>
