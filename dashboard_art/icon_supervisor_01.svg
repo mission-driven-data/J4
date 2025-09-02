@@ -1,0 +1,21 @@
+<svg width="25" height="25" viewBox="" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="tF dF" fill="none" style="display:block">
+  <title id="tF">Supervisor</title><desc id="dF">User with small flag badge.</desc>
+
+  <!-- User -->
+  <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="10" cy="8" r="3"/>
+    <path d="M4 19a6 6 0 0 1 12 0"/>
+  </g>
+
+  <!-- Flag badge -->
+<g stroke="var(--supervisor-accent, #F59E0B)" stroke-width="0.65"
+   stroke-linecap="round" stroke-linejoin="round"
+   vector-effect="non-scaling-stroke"
+   transform="translate(16.2,16.5) scale(2.35) translate(-16.2,-16.5)">
+  <path d="M15.2 17.6V14.2"/>
+  <path d="M15.2 13.8h3.2c-.4 .5-.4 1 0 1.5h-3.2z"/>
+
+</g>
+
+</svg>
