@@ -153,3 +153,8 @@ cython_debug/
 /JanetRC/Logs
 /janetconnect/Logs
 janetconnect/janet_connect.settings
+
+# Rollback copies of the bundled FileZilla archive, kept beside it so a bad
+# refresh is one rename to undo. They are 18MB each and must never reach the
+# public repo agencies download from. Added 09/25/2026 with plan item 4.2.
+janetconnect/FileZilla.zip.*.bak
